@@ -86,7 +86,7 @@ def anagram_candidate(con, vow):
             for pv in permuted_v:
                 word = ''
                 for c,v in zip(pc, pv):
-                    syl = compose(c,v,0)
+                    syl = compose(onsets.index(c), nuclei.index(v),0)
                     word += syl
                 word_set.add(word)
     
