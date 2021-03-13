@@ -126,18 +126,18 @@ class ANAGRAM():
  
 # Set page title and favicon.
 st.set_page_config(
-    page_title="Slogan Generator", page_icon=🕵️‍♀️,
+    page_title="애너그램 추리반", page_icon=🕵️‍♀️,
 )
 
 # Display header.
 st.markdown("<br>", unsafe_allow_html=True)
-st.image(EMOJI_URL, width=80)
+#st.image(EMOJI_URL, width=80)
 
 # set icon and link 
 """
 # 애너그램 풀기 + 만들기 
-[![github](https://github.com/yeounyi/GenerateSlogan/blob/main/img/github.png?raw=true)](https://github.com/yeounyi/GenerateSlogan)
-&nbsp[![linked](https://github.com/yeounyi/GenerateSlogan/blob/main/img/linkedin.png?raw=true)](https://in.linkedin.com/in/yeoun-yi-989360166/)
+[![github](https://github.com/yeounyi/AnagramApp/blob/main/img/github.png?raw=true)](https://github.com/yeounyi/AnagramApp)
+&nbsp[![linked](https://github.com/yeounyi/AnagramApp/blob/main/img/linkedin.png?raw=true)](https://in.linkedin.com/in/yeoun-yi-989360166/)
 
 
 """
@@ -150,8 +150,10 @@ st.markdown("<br>", unsafe_allow_html=True)
 - 헐생징 -> [햇정일, 일햇정, ..., 행정실, ...]
 """
 
+st.markdown("<span style='color:white'>래해새자장</span>", unsafe_allow_html=True)
+
 user_input = st.text_input("애너그램 문제 혹은 답을 입력하세요: ")
 
-with st.spinner('🤯 컴퓨터가 고민하고 있어요...'):
+with st.spinner('🤯 컴퓨터가 고민하고 있어요...같이 고민해봐요..'):
     a = ANAGRAM()
     a.anagram_candidate(user_input)
