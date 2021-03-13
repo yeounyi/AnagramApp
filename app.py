@@ -156,6 +156,10 @@ st.markdown("<br>", unsafe_allow_html=True)
 st.markdown("<span style='color:white'>래해새자장</span>", unsafe_allow_html=True)
 
 user_input = st.text_input("애너그램 문제 혹은 답을 입력하세요: ")
+
+if len(user_input) == 1:
+    st.error('한 글자는 의미가 없어요!')
+
 for syl in user_input:
     if not ord('가') <= ord(syl) <= ord('힣'):
         st.error('한글만 입력해주세요!')
