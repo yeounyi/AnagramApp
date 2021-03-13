@@ -158,5 +158,8 @@ st.markdown("<span style='color:white'>래해새자장</span>", unsafe_allow_htm
 user_input = st.text_input("애너그램 문제 혹은 답을 입력하세요: ")
 
 with st.spinner('🤯 컴퓨터가 고민하고 있어요...같이 고민해봐요..'):
-    con, vow = decompose(user_input)
-    st.write(anagram_candidate(con, vow))
+    try:
+        con, vow = decompose(user_input)
+        st.write(anagram_candidate(con, vow))
+    except:
+        st.error("한글만 입력해주세요!")  
