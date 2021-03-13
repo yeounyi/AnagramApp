@@ -137,8 +137,7 @@ def anagram_candidate(con, vow):
 
 # set icon and link 
 """
-# 🕵️‍♀️
-# 애너그램 
+# 애너그램 추리반 🕵️‍♀️
 [![github](https://github.com/yeounyi/AnagramApp/blob/main/img/github.png?raw=true)](https://github.com/yeounyi/AnagramApp)
 &nbsp[![linked](https://github.com/yeounyi/AnagramApp/blob/main/img/linkedin.png?raw=true)](https://in.linkedin.com/in/yeoun-yi-989360166/)
 
