@@ -159,6 +159,9 @@ user_input = st.text_input("애너그램 문제 혹은 답을 입력하세요: "
 
 if len(user_input) == 1:
     st.error('한 글자는 의미가 없어요!')
+    
+if len(user_input) >= 4:
+    st.error('4음절 이상은 좀 오래 걸려요.. 컴퓨터가 사람보다 느릴수도.. 하지만 답은 꼭 나옵니다!')
 
 for syl in user_input:
     if not ord('가') <= ord(syl) <= ord('힣'):
