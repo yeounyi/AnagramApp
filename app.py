@@ -54,6 +54,8 @@ def decompose(string):
     vow = []
     
     for s in string: # s는 한 음절 
+        if s == ' ': # 
+            continue
         con.append(onsets[onset(s)])
         vow.append(nuclei[nucleus(s)])
         
